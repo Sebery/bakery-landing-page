@@ -1,0 +1,257 @@
+:root {
+	--primary-color: white;
+	--secondary-color: black;
+}
+
+/* GENERAL STYLES */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 18px;
+}
+
+body {
+	font-family: "Merriweather", serif;
+	font-size: 1rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* FONT COLOR */
+.primary-color {
+	color: var(--primary-color);
+}
+
+.secondary-color {
+	color: var(--secondary-color);
+}
+
+/* FONT SIZE */
+
+.title-text {
+	font-size: 1.5rem;
+}
+
+.subtitle-text {
+	font-size: 1.3rem;
+}
+
+.other-subtitle-text {
+	font-size: 1rem;
+}
+
+.other-text {
+	font-size: 0.8rem;
+}
+
+/* NAVIGATION BAR */
+
+.navbar-container {
+	background: var(--primary-color);
+	width: 100vw;
+	height: 70px;
+}
+
+.navbar-container .navbar-logo {
+	margin: 0px auto;
+	text-align: center;
+	line-height: 4rem;
+	font-weight: bold;
+}
+
+.navbar-container .navbar-content {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.mobile-navbar-container {
+	background: var(--primary-color);
+	opacity: 1;
+	visibility: visible;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.mobile-navbar-container .navbar-content div {
+	margin: 0px auto;
+	text-align: center;
+	padding: 3px;
+	width: 100%;
+}
+
+.mobile-navbar-container .navbar-content .top-border {
+	border-top: 1px solid var(--secondary-color);
+}
+
+.mobile-navbar-container .navbar-content .bottom-border {
+	border-bottom: 1px solid var(--secondary-color);
+}
+
+.mobile-navbar-container a,
+.navbar-container .navbar-content a {
+	color: var(--secondary-color);
+	transition: all 0.5s ease;
+}
+
+.mobile-navbar-container a:hover,
+.navbar-container .navbar-content a:hover {
+	font-size: 1.1rem;
+}
+
+.mobile-navbar-container .discount-text,
+.navbar-content .discount-text {
+	font-weight: bold;
+}
+
+/* COVER SECTION */
+
+.cover-container {
+	width: 100vw;
+	position: relative;
+}
+
+.cover-container .cover-image img {
+	width: 100%;
+	filter: blur(1px) grayscale(0.5);
+}
+
+.cover-content-grid {
+	position: absolute;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 50% 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	align-items: center;
+}
+
+.cover-container .cover-title {
+	text-align: center;
+	background: rgba(128, 128, 128, 0.6);
+}
+
+.cover-container .main-product img {
+	width: 30%;
+}
+
+.cover-container .cover-title {
+	align-self: flex-start;
+}
+
+.cover-container .cover-title hr {
+	border: 2px solid rgba(0, 0, 0, 0.438);
+	width: 80%;
+	margin: 0px auto;
+}
+
+.cover-container .shop-button {
+	margin-top: 15px;
+}
+
+.cover-container .main-product {
+	align-self: flex-end;
+}
+
+.cover-container .main-product img {
+	filter: grayscale(0.35);
+}
+
+.cover-container .cover-title a {
+	background: var(--primary-color);
+	padding: 5px 30px;
+	font-weight: bold;
+}
+
+/* RESPONSIVE (DESKTOP) */
+
+@media screen and (min-width: 750px) {
+	/* FONT SIZE */
+
+	.title-text {
+		font-size: 1.5rem;
+	}
+
+	.subtitle-text {
+		font-size: 2rem;
+	}
+
+	.other-subtitle-text {
+		font-size: 1rem;
+	}
+
+	.other-text {
+		font-size: 0.8rem;
+	}
+
+	/* NAVIGATION SECTION */
+
+	.navbar-container .navbar-content {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.mobile-navbar-container {
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+	}
+
+	.navbar-container .navbar-content {
+		display: flex;
+		justify-content: space-around;
+		margin-right: 20px;
+	}
+
+	.navbar-container nav {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 70px;
+		align-items: center;
+	}
+
+	.navbar-container .navbar-logo {
+		margin: 0px 0px 0px 20px;
+		text-align: left;
+	}
+
+	/* COVER SECTION */
+
+	.cover-content-grid {
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 1fr;
+	}
+
+	.cover-container .cover-title {
+		align-self: center;
+	}
+
+	.cover-container .main-product img {
+		width: 45%;
+		margin-right: 50px;
+	}
+
+	.cover-container .cover-title {
+		text-align: left;
+		background: rgba(128, 128, 128, 0.6);
+		padding: 20px;
+	}
+
+	.cover-container .cover-title hr {
+		margin: 0px 0px;
+	}
+
+	.cover-container .main-product {
+		text-align: right;
+	}
+}
