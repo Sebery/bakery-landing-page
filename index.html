@@ -7,6 +7,7 @@
 			name="description"
 			content="The home of creative cakes! | Made by Sebery"
 		/>
+		<link rel="shortcut icon" href="img/bakery-icon.png" type="image/x-icon" />
 		<title>Bakery Landing Page | By Sebery</title>
 		<!-- STYLES -->
 		<link rel="stylesheet" href="main.css" />
@@ -72,7 +73,7 @@
 		</section>
 
 		<!-- COVER SECTION -->
-		<section class="cover-container">
+		<section class="cover-container" id="home">
 			<div class="cover-content">
 				<div class="cover-image">
 					<img src="img/cover-background.jpg" alt="Cover Background" />
@@ -93,6 +94,8 @@
 
 						<div class="shop-button">
 							<a
+								target="_blank"
+								rel="noreferrer"
 								class="other-subtitle-text secondary-color"
 								href="#insert-link-to-shop"
 								>SHOP</a
@@ -104,49 +107,59 @@
 		</section>
 
 		<!-- PRODUCTS SECTION -->
-		<section class="products-container">
+		<section class="products-container" id="products">
 			<div class="products-content">
 				<div class="title">
 					<div>
-						<h2>Authentic Cakes!</h2>
+						<h2 class="secondary-color subtitle-text">Authentic Cakes!</h2>
 					</div>
 
-					<div>
-						<hr />
-					</div>
+					<hr />
 				</div>
 
 				<div class="products">
 					<div class="product-item">
-						<div><img src="" alt="Product-1" /></div>
-						<div><h3>Great Cake</h3></div>
+						<div><img src="img/cake-1.png" alt="Product-1" /></div>
+						<div>
+							<h3 class="secondary-color other-subtitle-text">Great Cake</h3>
+						</div>
 					</div>
 
-					<div class="product-item">
-						<div><img src="" alt="Product-2" /></div>
-						<div><h3>Great Cake</h3></div>
+					<div class="product-item margin-top">
+						<div><img src="img/cake-1.png" alt="Product-2" /></div>
+						<div>
+							<h3 class="secondary-color other-subtitle-text">Great Cake</h3>
+						</div>
 					</div>
 
-					<div class="product-item">
-						<div><img src="" alt="Product-3" /></div>
-						<div><h3>Great Cake</h3></div>
+					<div class="product-item margin-top">
+						<div><img src="img/cake-1.png" alt="Product-3" /></div>
+						<div>
+							<h3 class="secondary-color other-subtitle-text">Great Cake</h3>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- TRUST SECTION -->
-		<section class="trust-container">
+		<section class="trust-container" id="benefits">
 			<div class="trust-content">
 				<div class="text-container">
-					<div><h2>We Understand You!</h2></div>
 					<div>
-						<h3>Low prices, fast attention and authentic pieces of cake.</h3>
+						<h2 class="primary-color subtitle-text">We Understand You!</h2>
+					</div>
+					<div>
+						<h3 class="primary-color other-subtitle-text">
+							Low prices, fast attention and authentic pieces of cake.
+						</h3>
 					</div>
 				</div>
 
 				<div class="image-container">
-					<div><img src="" alt="Fast Attention Image" /></div>
+					<div>
+						<img src="img/fast-attention.png" alt="Fast Attention Image" />
+					</div>
 				</div>
 			</div>
 		</section>
@@ -156,44 +169,56 @@
 			<div class="reviews-content">
 				<div class="review-item">
 					<div class="review-photo-container">
-						<img src="" alt="Review Photo" />
+						<img src="img/avatar-image.png" alt="Review Photo" />
 					</div>
 					<div class="stars-container">
-						<div><img src="" alt="start-1" /></div>
-						<div><img src="" alt="start-2" /></div>
-						<div><img src="" alt="start-3" /></div>
-						<div><img src="" alt="start-4" /></div>
-						<div><img src="" alt="start-5" /></div>
+						<div><img src="img/star-icon.png" alt="star-1" /></div>
+						<div><img src="img/star-icon.png" alt="star-2" /></div>
+						<div><img src="img/star-icon.png" alt="star-3" /></div>
+						<div><img src="img/star-icon.png" alt="star-4" /></div>
+						<div><img src="img/star-icon.png" alt="star-5" /></div>
 					</div>
 					<div class="opinion-container">
-						<h3><em>"The best cake in the world"</em></h3>
+						<h3 class="secondary-color other-text">
+							<em>"The best cake in the world"</em>
+						</h3>
 					</div>
 				</div>
 
 				<div class="review-item">
 					<div class="review-photo-container">
-						<img src="" alt="Review Photo" />
+						<img src="img/avatar-image.png" alt="Review Photo" />
 					</div>
 					<div class="stars-container">
-						<div><img src="" alt="start-1" /></div>
-						<div><img src="" alt="start-2" /></div>
-						<div><img src="" alt="start-3" /></div>
-						<div><img src="" alt="start-4" /></div>
-						<div><img src="" alt="start-5" /></div>
+						<div><img src="img/star-icon.png" alt="star-1" /></div>
+						<div><img src="img/star-icon.png" alt="star-2" /></div>
+						<div><img src="img/star-icon.png" alt="star-3" /></div>
+						<div><img src="img/star-icon.png" alt="star-4" /></div>
+						<div><img src="img/star-icon.png" alt="star-5" /></div>
 					</div>
 					<div class="opinion-container">
-						<h3><em>"The best cake in the world"</em></h3>
+						<h3 class="secondary-color other-text">
+							<em>"The best cake in the world"</em>
+						</h3>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- DISCOUNT SECTION -->
-		<section class="discount-container">
+		<section class="discount-container" id="discount">
 			<div class="discount-content">
-				<div class="discount-title"><h2>Get 25% Dicount Now!</h2></div>
+				<div class="discount-title">
+					<h2 class="subtitle-text primary-color">Get 25% Discount Now!</h2>
+				</div>
 				<div class="discount-button">
-					<a href="#insert-link-to-shop">SHOP</a>
+					<a
+						target="_blank"
+						rel="noreferrer"
+						class="secondary-color other-subtitle-text"
+						href="#insert-link-to-shop"
+						>SHOP</a
+					>
 				</div>
 			</div>
 		</section>
@@ -202,29 +227,35 @@
 		<footer>
 			<div class="footer-content">
 				<div class="footer-address">
-					<h3>574 Postell Rd, Mineral Bluff, GA, 30559</h3>
+					<h3 class="secondary-color other-text">
+						574 Postell Rd, Mineral Bluff, GA, 30559
+					</h3>
 				</div>
 				<div class="footer-social-media">
 					<div>
-						<a href="#insert-link-to-shop"><img src="" alt="Shop Icon" /></a>
-					</div>
-					<div>
-						<a href="#insert-link-to-instagram"
-							><img src="" alt="instagram Icon"
+						<a target="_blank" rel="noreferrer" href="#insert-link-to-shop"
+							><img src="img/instagram-icon.png" alt="Shop Icon"
 						/></a>
 					</div>
 					<div>
-						<a href="#insert-link-to-twitter"
-							><img src="" alt="twitter Icon"
+						<a target="_blank" rel="noreferrer" href="#insert-link-to-instagram"
+							><img src="img/instagram-icon.png" alt="instagram Icon"
 						/></a>
 					</div>
 					<div>
-						<a href="#insert-link-to-facebook"
-							><img src="" alt="facebook Icon"
+						<a target="_blank" rel="noreferrer" href="#insert-link-to-twitter"
+							><img src="img/instagram-icon.png" alt="twitter Icon"
+						/></a>
+					</div>
+					<div>
+						<a target="_blank" rel="noreferrer" href="#insert-link-to-facebook"
+							><img src="img/instagram-icon.png" alt="facebook Icon"
 						/></a>
 					</div>
 				</div>
-				<div class="footer-creator"><h3>Developed By Sebery</h3></div>
+				<div class="footer-creator">
+					<h3 class="secondary-color other-text">Developed By Sebery</h3>
+				</div>
 			</div>
 		</footer>
 	</body>
