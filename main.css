@@ -1,7 +1,13 @@
 :root {
+	/*
 	--primary-color: #ffdecf;
 	--secondary-color: #342b38;
-	--third-color: rgba(186, 121, 103, 0.4);
+	--third-color: rgba(186, 121, 103, 0.4);*/
+
+	--primary-color: #f0ece3;
+	--secondary-color: #596e79;
+	--third-color: #e0d9cf;
+	--other-color: #cac7bf;
 }
 
 /* GENERAL STYLES */
@@ -19,6 +25,7 @@ html {
 body {
 	font-family: "Merriweather", serif;
 	font-size: 1rem;
+	width: 100%;
 }
 
 a {
@@ -56,7 +63,7 @@ a {
 
 .navbar-container {
 	background: var(--primary-color);
-	width: 100vw;
+	width: 100%;
 	height: 70px;
 }
 
@@ -73,10 +80,10 @@ a {
 }
 
 .mobile-navbar-container {
-	background: var(--primary-color);
+	background: var(--secondary-color);
 	opacity: 1;
 	visibility: visible;
-	width: 100vw;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
@@ -89,14 +96,17 @@ a {
 }
 
 .mobile-navbar-container .navbar-content .top-border {
-	border-top: 1px solid var(--secondary-color);
+	border-top: 1px solid var(--primary-color);
 }
 
 .mobile-navbar-container .navbar-content .bottom-border {
-	border-bottom: 1px solid var(--secondary-color);
+	border-bottom: 1px solid var(--primary-color);
 }
 
-.mobile-navbar-container a,
+.mobile-navbar-container a {
+	color: var(--primary-color);
+}
+
 .navbar-container .navbar-content a {
 	color: var(--secondary-color);
 	transition: all 0.5s ease;
@@ -115,12 +125,13 @@ a {
 /* COVER SECTION */
 
 .cover-container {
-	width: 100vw;
+	width: 100%;
 	position: relative;
 }
 
 .cover-container .cover-image img {
 	width: 100%;
+	max-height: 600px;
 	filter: blur(1px) grayscale(0.3);
 }
 
@@ -139,11 +150,12 @@ a {
 
 .cover-container .cover-title {
 	text-align: center;
-	background: #342b38d5;
+	background: #596e794f;
 }
 
 .cover-container .main-product img {
 	width: 30%;
+	max-width: 300px;
 	animation-name: cake-appear;
 	animation-duration: 1s;
 	animation-iteration-count: 1;
@@ -179,14 +191,14 @@ a {
 }
 
 .cover-container .cover-title a:hover {
-	background: #4b3e50;
+	background: var(--secondary-color);
 	color: var(--primary-color);
 }
 
 /* PRODUCTS SECTION */
 
 .products-container {
-	width: 100vw;
+	width: 100%;
 	text-align: center;
 	background: var(--primary-color);
 }
@@ -223,7 +235,7 @@ a {
 /* TRUST SECTION */
 
 .trust-container {
-	width: 100vw;
+	width: 100%;
 	text-align: center;
 }
 
@@ -263,7 +275,7 @@ a {
 /* REVIEWS SECTION */
 
 .reviews-container {
-	width: 100vw;
+	width: 100%;
 	text-align: center;
 	background: var(--primary-color);
 }
@@ -297,7 +309,7 @@ a {
 /* DISCOUNT SECTION */
 
 .discount-container {
-	width: 100vw;
+	width: 100%;
 	background: var(--secondary-color);
 }
 
@@ -317,7 +329,7 @@ a {
 }
 
 .discount-container .discount-content a:hover {
-	background: #4b3e50;
+	background: var(--secondary-color);
 	color: var(--primary-color);
 }
 
@@ -328,7 +340,7 @@ a {
 /* FOOTER */
 
 footer {
-	width: 100vw;
+	width: 100%;
 	background: var(--primary-color);
 	padding: 15px;
 }
@@ -340,10 +352,13 @@ footer img {
 footer .footer-social-media {
 	display: flex;
 	margin: 5px 0px;
+	width: 100%;
+	justify-content: left;
 }
 
-footer .footer-creator {
-	text-align: right;
+footer .footer-social-media .footer-creator {
+	align-self: center;
+	margin-left: auto;
 }
 
 /* RESPONSIVE (DESKTOP) */
